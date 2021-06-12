@@ -120,6 +120,13 @@ build CMakeFiles\Symulacja.dir\Weapons.cpp.obj: CXX_COMPILER__Symulacja_Debug ..
   TARGET_COMPILE_PDB = CMakeFiles\Symulacja.dir\
   TARGET_PDB = Symulacja.pdb
 
+build CMakeFiles\Symulacja.dir\ArrangeData.cpp.obj: CXX_COMPILER__Symulacja_Debug ..\..\..\ArrangeData.cpp || cmake_object_order_depends_target_Symulacja_Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  OBJECT_DIR = CMakeFiles\Symulacja.dir
+  OBJECT_FILE_DIR = CMakeFiles\Symulacja.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Symulacja.dir\
+  TARGET_PDB = Symulacja.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Symulacja
@@ -128,7 +135,7 @@ build CMakeFiles\Symulacja.dir\Weapons.cpp.obj: CXX_COMPILER__Symulacja_Debug ..
 #############################################
 # Link the executable Symulacja.exe
 
-build Symulacja.exe: CXX_EXECUTABLE_LINKER__Symulacja_Debug CMakeFiles\Symulacja.dir\Symulacja.cpp.obj CMakeFiles\Symulacja.dir\Map.cpp.obj CMakeFiles\Symulacja.dir\MainClass.cpp.obj CMakeFiles\Symulacja.dir\People.cpp.obj CMakeFiles\Symulacja.dir\Zombie.cpp.obj CMakeFiles\Symulacja.dir\Soldiers.cpp.obj CMakeFiles\Symulacja.dir\Civilians.cpp.obj CMakeFiles\Symulacja.dir\WeakZombie.cpp.obj CMakeFiles\Symulacja.dir\StrongZombie.cpp.obj CMakeFiles\Symulacja.dir\Food.cpp.obj CMakeFiles\Symulacja.dir\Weapons.cpp.obj
+build Symulacja.exe: CXX_EXECUTABLE_LINKER__Symulacja_Debug CMakeFiles\Symulacja.dir\Symulacja.cpp.obj CMakeFiles\Symulacja.dir\Map.cpp.obj CMakeFiles\Symulacja.dir\MainClass.cpp.obj CMakeFiles\Symulacja.dir\People.cpp.obj CMakeFiles\Symulacja.dir\Zombie.cpp.obj CMakeFiles\Symulacja.dir\Soldiers.cpp.obj CMakeFiles\Symulacja.dir\Civilians.cpp.obj CMakeFiles\Symulacja.dir\WeakZombie.cpp.obj CMakeFiles\Symulacja.dir\StrongZombie.cpp.obj CMakeFiles\Symulacja.dir\Food.cpp.obj CMakeFiles\Symulacja.dir\Weapons.cpp.obj CMakeFiles\Symulacja.dir\ArrangeData.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
