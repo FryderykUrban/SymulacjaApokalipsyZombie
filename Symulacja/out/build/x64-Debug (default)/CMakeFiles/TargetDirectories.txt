@@ -1,3 +1,0 @@
-C:/Users/Lenovo/Documents/GitHub/Programowanie_Obiektowe/Symulacja/out/build/x64-Debug (default)/CMakeFiles/Symulacja.dir
-C:/Users/Lenovo/Documents/GitHub/Programowanie_Obiektowe/Symulacja/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
-C:/Users/Lenovo/Documents/GitHub/Programowanie_Obiektowe/Symulacja/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
