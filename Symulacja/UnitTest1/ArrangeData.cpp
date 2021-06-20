@@ -2,30 +2,30 @@
 #include "ArrangeData.h"
 using namespace std;
 
-void ArrangeData::LoadData(int& AmmountCivilians, int& AmmountSoldiers, int& AmmountWeakZombies, int& AmmountStrongZombie) {
-    cout << "Enter the number of civilians (1 - 200): ";
-    while (!(cin >> AmmountCivilians && AmmountCivilians <= 200 && AmmountCivilians >= 0)) {
+void ArrangeData::LoadData(int& AmmountCivilians, int& AmmountSoldiers, int& AmmountWeakZombies, int& AmmountStrongZombie) {      // pozyskiwanie od uzytkownika wartosci poczatkowych
+    cout << "Enter the number of civilians (1 - 200): ";                                                                         
+    while (!(cin >> AmmountCivilians && AmmountCivilians <= 200 && AmmountCivilians > 0)) {
         cin.clear();
         cin.ignore(50, '\n');
         cout << "Incorrect number of Civilians. ";
     }
 
     cout << "Enter the number of soldiers (1 - 200): ";
-    while (!(cin >> AmmountSoldiers && AmmountSoldiers <= 200 && AmmountSoldiers >= 0)) {
+    while (!(cin >> AmmountSoldiers && AmmountSoldiers <= 200 && AmmountSoldiers > 0)) {
         cin.clear();
         cin.ignore(50, '\n');
         cout << "Incorrect number of soldiers. ";
     }
 
     cout << "Enter the number of weak zombies (1 - 200): ";
-    while (!(cin >> AmmountWeakZombies && AmmountWeakZombies <= 200 && AmmountWeakZombies >= 0)) {
+    while (!(cin >> AmmountWeakZombies && AmmountWeakZombies <= 200 && AmmountWeakZombies > 0)) {
         cin.clear();
         cin.ignore(50, '\n');
         cout << "Incorrect number of weak zombies. ";
     }
 
     cout << "Enter the number of strong zombies (1 - 200): ";
-    while (!(cin >> AmmountStrongZombie && AmmountStrongZombie <= 200 && AmmountStrongZombie >= 0)) {
+    while (!(cin >> AmmountStrongZombie && AmmountStrongZombie <= 200 && AmmountStrongZombie > 0)) {
         cin.clear();
         cin.ignore(50, '\n');
         cout << "Incorrect number of strong zombies. ";
@@ -33,7 +33,7 @@ void ArrangeData::LoadData(int& AmmountCivilians, int& AmmountSoldiers, int& Amm
 
 }
 
-void ArrangeData::LoadToFile(int AmmountCivilians, int AmmountSoldiers, int AmmountWeakZombies, int AmmountStrongZombie, int AmmountFood) {
+void ArrangeData::LoadToFile(int AmmountCivilians, int AmmountSoldiers, int AmmountWeakZombies, int AmmountStrongZombie, int AmmountFood) {         // zapisywanie poczatkowych wartosci do piku
     fstream plik;
 
     plik << "Initial value for each class" << endl;
@@ -45,7 +45,7 @@ void ArrangeData::LoadToFile(int AmmountCivilians, int AmmountSoldiers, int Ammo
     plik.close();
 }
 
-void ArrangeData::ShowData(int EndCivilians, int EndSoldier, int EndWeakZombie, int EndStrongZombie, int CurrentlyFood, int& z) {
+void ArrangeData::ShowData(int EndCivilians, int EndSoldier, int EndWeakZombie, int EndStrongZombie, int CurrentlyFood, int& z) { //dopisywanie dalszych danych do pliku
     fstream plik;
 
     plik.open("dane.txt", ios::out | ios::app);

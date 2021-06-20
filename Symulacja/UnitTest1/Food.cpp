@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Weapons.h"
+#include "Food.h"
 
 using namespace std;
 
-Weapons::Weapons(int x, int y, int bn) {
+Food::Food(int x, int y, int bn) { //konstruktor
 	Xpos = x;
 	Ypos = y;
 	baseNumber = bn;

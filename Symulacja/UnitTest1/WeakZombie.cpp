@@ -3,7 +3,7 @@
 
 using namespace std;
 
-WeakZombies::WeakZombies(int ax, int ay, int tk, int h, bool die, int bn, int mv) {
+WeakZombies::WeakZombies(int ax, int ay, int tk, int h, bool die, int bn, int mv) {     //konstruktor
 	Xpos = ax;
 	Ypos = ay;
 	TakenDamage = tk;

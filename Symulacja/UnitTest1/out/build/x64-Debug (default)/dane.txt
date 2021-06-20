@@ -1,0 +1,175 @@
+Ammount of specimens in 1 round
+Civilians: 25
+Soldiers: 25
+Weak Zombies: 25
+Strong Zombies: 25
+Ammount of food on the map: 17
+
+Ammount of specimens in 2 round
+Civilians: 25
+Soldiers: 25
+Weak Zombies: 25
+Strong Zombies: 25
+Ammount of food on the map: 19
+
+Ammount of specimens in 3 round
+Civilians: 25
+Soldiers: 25
+Weak Zombies: 25
+Strong Zombies: 25
+Ammount of food on the map: 16
+
+Ammount of specimens in 4 round
+Civilians: 25
+Soldiers: 25
+Weak Zombies: 25
+Strong Zombies: 25
+Ammount of food on the map: 18
+
+Ammount of specimens in 5 round
+Civilians: 25
+Soldiers: 25
+Weak Zombies: 25
+Strong Zombies: 25
+Ammount of food on the map: 18
+
+Ammount of specimens in 6 round
+Civilians: 25
+Soldiers: 25
+Weak Zombies: 25
+Strong Zombies: 25
+Ammount of food on the map: 20
+
+Ammount of specimens in 7 round
+Civilians: 25
+Soldiers: 25
+Weak Zombies: 25
+Strong Zombies: 24
+Ammount of food on the map: 18
+
+Ammount of specimens in 8 round
+Civilians: 25
+Soldiers: 25
+Weak Zombies: 24
+Strong Zombies: 24
+Ammount of food on the map: 20
+
+Ammount of specimens in 9 round
+Civilians: 25
+Soldiers: 25
+Weak Zombies: 24
+Strong Zombies: 23
+Ammount of food on the map: 20
+
+Ammount of specimens in 10 round
+Civilians: 22
+Soldiers: 25
+Weak Zombies: 24
+Strong Zombies: 23
+Ammount of food on the map: 20
+
+Ammount of specimens in 11 round
+Civilians: 22
+Soldiers: 25
+Weak Zombies: 24
+Strong Zombies: 23
+Ammount of food on the map: 18
+
+Ammount of specimens in 12 round
+Civilians: 21
+Soldiers: 25
+Weak Zombies: 24
+Strong Zombies: 22
+Ammount of food on the map: 19
+
+Ammount of specimens in 13 round
+Civilians: 20
+Soldiers: 25
+Weak Zombies: 23
+Strong Zombies: 22
+Ammount of food on the map: 19
+
+Ammount of specimens in 14 round
+Civilians: 20
+Soldiers: 25
+Weak Zombies: 23
+Strong Zombies: 21
+Ammount of food on the map: 20
+
+Ammount of specimens in 15 round
+Civilians: 20
+Soldiers: 23
+Weak Zombies: 23
+Strong Zombies: 21
+Ammount of food on the map: 21
+
+Ammount of specimens in 16 round
+Civilians: 20
+Soldiers: 23
+Weak Zombies: 23
+Strong Zombies: 21
+Ammount of food on the map: 22
+
+Ammount of specimens in 17 round
+Civilians: 20
+Soldiers: 22
+Weak Zombies: 23
+Strong Zombies: 20
+Ammount of food on the map: 24
+
+Ammount of specimens in 18 round
+Civilians: 18
+Soldiers: 20
+Weak Zombies: 23
+Strong Zombies: 19
+Ammount of food on the map: 24
+
+Ammount of specimens in 19 round
+Civilians: 18
+Soldiers: 20
+Weak Zombies: 23
+Strong Zombies: 19
+Ammount of food on the map: 25
+
+Ammount of specimens in 20 round
+Civilians: 18
+Soldiers: 19
+Weak Zombies: 23
+Strong Zombies: 19
+Ammount of food on the map: 24
+
+Ammount of specimens in 21 round
+Civilians: 17
+Soldiers: 18
+Weak Zombies: 23
+Strong Zombies: 18
+Ammount of food on the map: 27
+
+Ammount of specimens in 22 round
+Civilians: 17
+Soldiers: 17
+Weak Zombies: 23
+Strong Zombies: 16
+Ammount of food on the map: 25
+
+Ammount of specimens in 23 round
+Civilians: 17
+Soldiers: 16
+Weak Zombies: 23
+Strong Zombies: 16
+Ammount of food on the map: 26
+
+Ammount of specimens in 24 round
+Civilians: 16
+Soldiers: 16
+Weak Zombies: 23
+Strong Zombies: 16
+Ammount of food on the map: 26
+
+Ammount of specimens in 25 round
+Civilians: 15
+Soldiers: 16
+Weak Zombies: 23
+Strong Zombies: 16
+Ammount of food on the map: 29
+

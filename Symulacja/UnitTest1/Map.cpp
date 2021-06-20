@@ -5,11 +5,11 @@
 
 using namespace std;
 
-Map::Map(int w, int h) {
+Map::Map(int w, int h) {      //konstruktor
 	width = w;
 	height = h;
 
-	board = new int* [width];
+	board = new int* [width];			// utworzenie dwuwymiarowej tablicy, ktora jest odpowiedzialna za wyswieltanie ludzi i zombie na mapie
 	for (int k = 0; k < width; k++) {
 		board[k] = new int[height];
 	}
@@ -20,7 +20,7 @@ Map::Map(int w, int h) {
 		}
 	}
 
-	AdditivesMap = new int* [width];
+	AdditivesMap = new int* [width];			// utworzenie dwuwymiarowej tablicy odpowiedzialnej za wyswietlanie jedzenia i broni na mapie
 	for (int q = 0; q < width; q++) {
 		AdditivesMap[q] = new int[height];
 	}
@@ -33,7 +33,7 @@ Map::Map(int w, int h) {
 }
 
 Map::~Map() {
-	for (int i(0); i < height; ++i) {
+	for (int i(0); i < height; ++i) {			//destruktor board i AdditivesMap
 		delete[] board[i];
 	}
 	delete[] board;
@@ -71,30 +71,30 @@ void Map::setBoard(unsigned int xd, unsigned int ya, int ua) {
 }
 
 void Map::CreateMap(int EndCivilian, int EndSoldier, int EndWeakZombie, int EndStrongZombie) {
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);			// kolory w konsoli
 
-	for (int i = 0; i < 52; i++) cout << "\xDC";
+	for (int i = 0; i < 52; i++) cout << "\xDC";			// utworzenie gornej granicy mapy
 
 	for (int p = 0; p < height; p++) {
 		SetConsoleTextAttribute(hConsole, 7);
-		cout << endl << "\xDB";
+		cout << endl << "\xDB";			// utworzenie lewej granicy mapy
 		for (int o = 0; o < width; o++)
 		{
-			if ((board[o][p] == 0) && (AdditivesMap[o][p] == 0)) { cout << "\40"; }
+			if ((board[o][p] == 0) && (AdditivesMap[o][p] == 0)) { cout << "\40"; }			// warunek ktory sprawdza czy na danym polu znajduje sie jakis obiekt
 			else if (board[o][p] == 1) {
-				SetConsoleTextAttribute(hConsole, 14);
-				cout << "\3";
-				SetConsoleTextAttribute(hConsole, 7);
+				SetConsoleTextAttribute(hConsole, 14);			// sprawdzanie jaki obiekt znajduje sie w danym polu 
+				cout << "\3";									// i wyswietlenie prawidlowego znaku opisujacego ten obiekt
+				SetConsoleTextAttribute(hConsole, 7);			// dla cywili
 			}
 
 			else if (board[o][p] == 2) {
-				SetConsoleTextAttribute(hConsole, 3);
+				SetConsoleTextAttribute(hConsole, 3);			// dla zolniezy
 				cout << "\4";
 				SetConsoleTextAttribute(hConsole, 7);
 			}
 
 			else if ((board[o][p] == 3) && (AdditivesMap[o][p] == 0)) {
-				SetConsoleTextAttribute(hConsole, 12);
+				SetConsoleTextAttribute(hConsole, 12);			// dla slabych zombie
 				cout << "\5";
 				SetConsoleTextAttribute(hConsole, 7);
 			}
@@ -110,7 +110,7 @@ void Map::CreateMap(int EndCivilian, int EndSoldier, int EndWeakZombie, int EndS
 			}
 
 			else if ((board[o][p] == 4) && (AdditivesMap[o][p] == 0)) {
-				SetConsoleTextAttribute(hConsole, 13);
+				SetConsoleTextAttribute(hConsole, 13);			// dla silnych zombie
 				cout << "\6";
 				SetConsoleTextAttribute(hConsole, 7);
 			}
@@ -126,19 +126,19 @@ void Map::CreateMap(int EndCivilian, int EndSoldier, int EndWeakZombie, int EndS
 			}
 
 			else if ((board[o][p] == 0) && (AdditivesMap[o][p] == 5)) {
-				SetConsoleTextAttribute(hConsole, 164);
+				SetConsoleTextAttribute(hConsole, 164);			// dla jedzenia
 				cout << "\40";
 				SetConsoleTextAttribute(hConsole, 7);
 			}
 			else if ((board[o][p] == 0) && (AdditivesMap[o][p] == 6)) {
-				SetConsoleTextAttribute(hConsole, 15);
+				SetConsoleTextAttribute(hConsole, 15);			// dla broni
 				cout << "\30";
 				SetConsoleTextAttribute(hConsole, 7);
 			}
 		}
-		cout << "\xDB";
+		cout << "\xDB";			// utworzenie prawej granicy mapy
 
-		if (p == 1) { cout << " Number of remaining people"; }
+		if (p == 1) { cout << " Number of remaining people"; }			// wyswietlenie legendy w konsoli
 		else if (p == 2) { SetConsoleTextAttribute(hConsole, 14);  cout << "     Civilians :" << " \3 " << ": " << EndCivilian; }
 		else if (p == 3) { SetConsoleTextAttribute(hConsole, 3);  cout << "     Soldiers :" << " \4 " << ": " << EndSoldier; SetConsoleTextAttribute(hConsole, 7); }
 		else if (p == 4) { cout << " Number of remaining zombies"; }
@@ -151,11 +151,11 @@ void Map::CreateMap(int EndCivilian, int EndSoldier, int EndWeakZombie, int EndS
 	}
 	cout << endl;
 
-	for (int i = 0; i < 52; i++) cout << "\xDF";
+	for (int i = 0; i < 52; i++) cout << "\xDF";			// utworzenie dolnej granicy mapy
 	cout << endl;
 }
 
-void Map::count(int& EndCivilian, int& EndSoldier, int& EndWeakZombie, int& EndStrongZombie, int& CurrentlyFood) {
+void Map::count(int& EndCivilian, int& EndSoldier, int& EndWeakZombie, int& EndStrongZombie, int& CurrentlyFood) {			//funkcja zlicza obiekty znajdujace sie na mapie
 	for (int i = 0; i < 50; i++) {
 		for (int u = 0; u < 20; u++) {
 			if (board[i][u] == 1) { EndCivilian++; }
@@ -167,7 +167,7 @@ void Map::count(int& EndCivilian, int& EndSoldier, int& EndWeakZombie, int& EndS
 	}
 }
 
-void Map::Reducing(int& EndCivilian, int& EndSoldier, int& EndWeakZombie, int& EndStrongZombie, int& CurrentlyFood) {
+void Map::Reducing(int& EndCivilian, int& EndSoldier, int& EndWeakZombie, int& EndStrongZombie, int& CurrentlyFood) {			// zredukowanie do zera zmiennych zliczajacych aktualna liczbe obiektow na mapie
 	EndCivilian = 0;
 	EndSoldier = 0;
 	EndWeakZombie = 0;

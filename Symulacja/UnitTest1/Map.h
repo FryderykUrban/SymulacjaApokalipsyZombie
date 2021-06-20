@@ -14,7 +14,7 @@ class Map {
 	int** AdditivesMap;
 	int width, height;
 public:
-	Map(int w = 50, int h = 20);
+	Map(int w = 50, int h = 20);			
 	~Map();
 	int getWidth();
 	int getHeight();
